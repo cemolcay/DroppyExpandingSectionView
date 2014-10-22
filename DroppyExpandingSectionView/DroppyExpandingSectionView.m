@@ -8,6 +8,7 @@
 
 #import "DroppyExpandingSectionView.h"
 
+#define InitialTopPadding   10
 
 #pragma mark - DroppyExpandingSectionView
 
@@ -27,7 +28,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
-        self.contentSize = CGSizeMake([self w], self.sectionPadding);
+
     }
     return self;
 }
@@ -81,7 +82,6 @@
         
         // Create Droppy Section
         UIView *sectionHeaderView = [self.droppyDataSource droppyExpandingSectionView:self sectionHeaderViewAtSection:section];
-        [sectionHeaderView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(sectionTapped:)]];
         
         DroppySection *droppySection = [[DroppySection alloc] initWithHeaderView:sectionHeaderView index:section andPadding:self.sectionViewPadding];
         [droppySection setDelegate:self];
@@ -110,11 +110,12 @@
 #pragma mark Utils
 
 - (void)updateContentSize {
-    CGFloat height = self.sectionPadding;
+    CGFloat height = 0;//self.sectionPadding;
     
     for (int i = 0; i < self.sections.count; i++) {
         DroppySection *section = (DroppySection *)[self.sections objectAtIndex:i];
-        height += section.currentHeight + self.sectionPadding;
+        height += (section.currentHeight + self.sectionPadding);
+        NSLog(@"section padding %f", self.sectionPadding);
     }
     
     [UIView animateWithDuration:0.3 animations:^{

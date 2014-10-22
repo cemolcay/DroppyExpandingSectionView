@@ -215,6 +215,7 @@
     [self.headerView moveYBy:y];
 }
 
+
 #pragma mark Properties
 
 - (CGFloat)currentHeight {

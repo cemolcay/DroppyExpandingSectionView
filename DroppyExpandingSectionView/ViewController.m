@@ -22,6 +22,7 @@
 #pragma mark Lifecycle
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     [self setupDataSource];
     
     DroppyExpandingSectionView *droppy = [[DroppyExpandingSectionView alloc] initWithFrame:self.view.frame];
@@ -66,10 +67,22 @@
     }
     
     
+    // create section 4
+    UIView *sectionHeader4 = [self sectionHeaderViewWithTitle:@"forth Section"];
+    
+    // create section 3 expanding views
+    NSMutableArray *sectionViews4 = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 3; i++) {
+        UIView *sectionView = [self sectionViewWithTitle:[NSString stringWithFormat:@"Section 4 - Item %d", i]];
+        [sectionViews4 addObject:sectionView];
+    }
+    
+    
     //Create Data Source JSON style Dictionary
     self.dataSource = @[@{@"header":sectionHeader1, @"items":sectionViews1},
                         @{@"header":sectionHeader2, @"items":sectionViews2},
-                        @{@"header":sectionHeader3, @"items":sectionViews3}];
+                        @{@"header":sectionHeader3, @"items":sectionViews3},
+                        @{@"header":sectionHeader4, @"items":sectionViews4}];
 }
 
 
@@ -125,6 +138,14 @@
     NSArray *sectionViews = (NSArray *)sectionObject[@"items"];
     UIView *sectionView = (UIView *)[sectionViews objectAtIndex:index];
     return sectionView;
+}
+
+- (CGFloat)paddingBetweenSectionsInDroppyExpandingSectionView:(DroppyExpandingSectionView *)droppy {
+    return 20;
+}
+
+- (CGFloat)paddingBetweenViewsInDroppyExpandingSectionView:(DroppyExpandingSectionView *)droppy {
+    return 10;
 }
 
 
