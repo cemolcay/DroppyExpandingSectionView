@@ -60,7 +60,7 @@
     
     // create section 3 expanding views
     NSMutableArray *sectionViews3 = [[NSMutableArray alloc] init];
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 5; i++) {
         UIView *sectionView = [self sectionViewWithTitle:[NSString stringWithFormat:@"Section 3 - Item %d", i]];
         [sectionViews3 addObject:sectionView];
     }

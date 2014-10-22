@@ -87,8 +87,8 @@
 		B2AF94F819F79FF500691CB3 /* DroppyExpandingSectionView */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF94FD19F79FF500691CB3 /* AppDelegate.h */,
 				B2AF952219F7A8CA00691CB3 /* DroppyExpandingSectionView */,
+				B2AF94FD19F79FF500691CB3 /* AppDelegate.h */,
 				B2AF94FE19F79FF500691CB3 /* AppDelegate.m */,
 				B2AF950019F79FF500691CB3 /* ViewController.h */,
 				B2AF950119F79FF500691CB3 /* ViewController.m */,
@@ -432,6 +432,7 @@
 				B2AF951B19F79FF500691CB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2AF951C19F79FF500691CB3 /* Build configuration list for PBXNativeTarget "DroppyExpandingSectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +441,7 @@
 				B2AF951E19F79FF500691CB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

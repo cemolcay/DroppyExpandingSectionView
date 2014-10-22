@@ -54,6 +54,10 @@
     }
     
     [self updateContentSize];
+    
+    CGFloat sectionY = [droppySection.headerView y];
+    CGFloat bottom = self.contentSize.height - [self h];
+    [self setContentOffset:CGPointMake(self.contentOffset.x, MIN(sectionY, MAX(bottom, 0))) animated:YES];
 }
 
 - (void)didCollapseDroppySection:(DroppySection *)droppySection {
