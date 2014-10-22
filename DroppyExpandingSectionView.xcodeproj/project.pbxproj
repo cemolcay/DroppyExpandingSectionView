@@ -14,6 +14,8 @@
 		B2AF950719F79FF500691CB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AF950619F79FF500691CB3 /* Images.xcassets */; };
 		B2AF950A19F79FF500691CB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2AF950819F79FF500691CB3 /* LaunchScreen.xib */; };
 		B2AF951619F79FF500691CB3 /* DroppyExpandingSectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AF951519F79FF500691CB3 /* DroppyExpandingSectionViewTests.m */; };
+		B2AF952119F7A02700691CB3 /* DroppyExpandingSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AF952019F7A02700691CB3 /* DroppyExpandingSectionView.m */; };
+		B2AF952819F7A92E00691CB3 /* DroppySection.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AF952719F7A92E00691CB3 /* DroppySection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		B2AF950F19F79FF500691CB3 /* DroppyExpandingSectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroppyExpandingSectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AF951419F79FF500691CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2AF951519F79FF500691CB3 /* DroppyExpandingSectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroppyExpandingSectionViewTests.m; sourceTree = "<group>"; };
+		B2AF951F19F7A02700691CB3 /* DroppyExpandingSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DroppyExpandingSectionView.h; sourceTree = "<group>"; };
+		B2AF952019F7A02700691CB3 /* DroppyExpandingSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DroppyExpandingSectionView.m; sourceTree = "<group>"; };
+		B2AF952619F7A92E00691CB3 /* DroppySection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DroppySection.h; sourceTree = "<group>"; };
+		B2AF952719F7A92E00691CB3 /* DroppySection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DroppySection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				B2AF94FD19F79FF500691CB3 /* AppDelegate.h */,
+				B2AF952219F7A8CA00691CB3 /* DroppyExpandingSectionView */,
 				B2AF94FE19F79FF500691CB3 /* AppDelegate.m */,
 				B2AF950019F79FF500691CB3 /* ViewController.h */,
 				B2AF950119F79FF500691CB3 /* ViewController.m */,
@@ -117,6 +124,17 @@
 				B2AF951419F79FF500691CB3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2AF952219F7A8CA00691CB3 /* DroppyExpandingSectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B2AF951F19F7A02700691CB3 /* DroppyExpandingSectionView.h */,
+				B2AF952019F7A02700691CB3 /* DroppyExpandingSectionView.m */,
+				B2AF952619F7A92E00691CB3 /* DroppySection.h */,
+				B2AF952719F7A92E00691CB3 /* DroppySection.m */,
+			);
+			name = DroppyExpandingSectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2AF950219F79FF500691CB3 /* ViewController.m in Sources */,
+				B2AF952819F7A92E00691CB3 /* DroppySection.m in Sources */,
 				B2AF94FF19F79FF500691CB3 /* AppDelegate.m in Sources */,
 				B2AF94FC19F79FF500691CB3 /* main.m in Sources */,
+				B2AF952119F7A02700691CB3 /* DroppyExpandingSectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
