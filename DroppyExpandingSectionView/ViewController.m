@@ -104,6 +104,10 @@
     [lbl setTextColor:[UIColor blackColor]];
     [lbl setFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:25]];
     [lbl setBackgroundColor:[self randomColor]];
+    
+    [lbl addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap:)]];
+    [lbl setUserInteractionEnabled:YES];
+    
     return lbl;
 }
 
@@ -114,6 +118,10 @@
     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
 }
 
+- (void)didTap: (UITapGestureRecognizer *)tap {
+    UILabel *label = (UILabel *)tap.view;
+    NSLog(@"%@ didTap", label.text);
+}
 
 #pragma mark - DroppyExpandingSectionViewDataSource
 

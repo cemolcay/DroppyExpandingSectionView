@@ -98,9 +98,8 @@
 }
 
 - (void)addDroppySection:(DroppySection *)droppySection {
-    UIView *view = [droppySection headerView];
-    [view setY:[self currentHeight]];
-    [self addSubview:view];
+    [droppySection setY:[self currentHeight]];
+    [self addSubview:droppySection];
     
     [self.sections addObject:droppySection];
     [self updateContentSize];

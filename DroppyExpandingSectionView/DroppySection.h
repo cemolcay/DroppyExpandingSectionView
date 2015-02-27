@@ -36,7 +36,7 @@
 @end
 
 
-@interface DroppySection : NSObject
+@interface DroppySection : UIView
 
 @property (nonatomic, weak) id<DroppySectionDelegate> delegate;
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7AF049F2-7F8C-4241-9E7F-B071E133ADF9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DroppyExpandingSectionView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7891730A7AF40E2FF0DC998E361489033B2C43DD</key>
+		<string>https://github.com/cemolcay/DroppyExpandingSectionView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DroppyExpandingSectionView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7891730A7AF40E2FF0DC998E361489033B2C43DD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cemolcay/DroppyExpandingSectionView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7891730A7AF40E2FF0DC998E361489033B2C43DD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7891730A7AF40E2FF0DC998E361489033B2C43DD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DroppyExpandingSectionView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

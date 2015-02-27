@@ -135,8 +135,12 @@
 @implementation DroppySection
 
 - (instancetype)initWithHeaderView:(UIView *)headerView index:(NSInteger)index andPadding:(CGFloat)padding {
-    if ((self = [super init])) {
+    if ((self = [super initWithFrame:headerView.frame])) {
         self.headerView = headerView;
+        [self.headerView setX:0];
+        [self.headerView setY:0];
+        [self addSubview:self.headerView];
+        
         self.index = index;
         self.padding = padding;
         
@@ -168,7 +172,7 @@
     
     if (!self.contentView) {
         self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, [self.headerView h], [self.headerView w], self.padding)];
-        [self.headerView addSubview:self.contentView];
+        [self addSubview:self.contentView];
     }
     
     [view setY:0];
@@ -177,6 +181,7 @@
     [self.contentView addH:[view h] + self.padding];
     [self.contentView addSubview:view];
     
+    [self setH:[self totalHeight]];
     [self.views addObject:view];
 }
 
@@ -212,7 +217,7 @@
 }
 
 - (void)moveY:(CGFloat)y {
-    [self.headerView moveYBy:y];
+    [self moveYBy:y];
 }
 
 
